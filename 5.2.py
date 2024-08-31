@@ -15,5 +15,7 @@ for i in range (nr_numbers):
     p.append(random.choice(numbers))
 password=""
 for i in range(nr_letters+nr_numbers+nr_symbols):
-    password+=random.choice(p)
+    j=random.choice(p)
+    p.remove(j)
+    password+=j
 print(password)
