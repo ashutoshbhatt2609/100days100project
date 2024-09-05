@@ -14,8 +14,12 @@ for i in range (nr_symbols):
 for i in range (nr_numbers):
     p.append(random.choice(numbers))
 password=""
-for i in range(nr_letters+nr_numbers+nr_symbols):
-    j=random.choice(p)
-    p.remove(j)
-    password+=j
+random.shuffle(p)
+for i in p:
+    password+=i
+# for i in range(nr_letters+nr_numbers+nr_symbols):
+#     j=random.choice(p)
+#     p.remove(j)
+#     password+=j
 print(password)
+    
