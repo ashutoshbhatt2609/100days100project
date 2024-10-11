@@ -36,4 +36,5 @@ def compare(f1,f2,ans):
 
 def game():
     print(logo)
-selection()
+    selection()    
+game()
