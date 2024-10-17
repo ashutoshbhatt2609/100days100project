@@ -1,4 +1,4 @@
-from menu import *
+from menu1 import *
 water=resources["water"]
 milk=resources["milk"]
 coffee=resources["coffee"]
@@ -23,9 +23,10 @@ def choice():
 def functioning(user):
     detail=MENU[user]
     cost1=detail["cost"]
+    print("Please insert coins.")
     money_got=cost()
     if  money_got<cost1:
-        print("Insufficient money!!!!!")
+        print("Insufficient money!!!!!, Money Refunded!!!!!")
     else:
         print(f"Remaining Change = {money_got-cost1}")
 
