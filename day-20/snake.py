@@ -6,7 +6,7 @@ UP=90
 DOWN=270
 LEFT=180
 RIGHT=0
-DELAY=0.1
+DELAY=0.05
 
 class Snake:
     def __init__(self):
