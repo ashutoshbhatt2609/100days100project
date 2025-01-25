@@ -31,7 +31,7 @@ while game_is_on:
         game_ball.bounce_y()
 
      
-    if game_ball.distance(r_paddle)<50 and (game_ball.xcor()>330 and game_ball.xcor()<360) or game_ball.distance(l_paddle)<0 and (game_ball.xcor()<-330and game_ball.xcor()>-360):
+    if game_ball.distance(r_paddle)<50 and (game_ball.xcor()>330 and game_ball.xcor()<360) or game_ball.distance(l_paddle)<50 and (game_ball.xcor()<-330 and game_ball.xcor()>-360):
         game_ball.bounce_x()
     
     if game_ball.xcor()>380:
